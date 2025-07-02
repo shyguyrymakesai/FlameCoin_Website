@@ -1,0 +1,19 @@
+{
+  "name": "flamecoin-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev --port 4321",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.0",
+    "astro": "^5.10.2"
+  }
+}

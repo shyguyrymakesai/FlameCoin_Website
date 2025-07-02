@@ -1,0 +1,6 @@
+{
+  "name": "FlameCoin",
+  "short_name": "FlameCoin",
+  "start_url": "/",
+  "display": "standalone"
+}

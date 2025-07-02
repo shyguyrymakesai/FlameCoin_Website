@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "types": ["astro/client"],
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "esnext"
+  }
+}

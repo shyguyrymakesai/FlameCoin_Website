@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--ash);
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar a {
+  color: var(--charcoal);
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-brand .logo {
+  height: 40px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--charcoal);
+  margin: 4px 0;
+  transition: 0.4s;
+}
+.nav-toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem 0;
+    background: var(--ash);
+  }
+  .nav-links li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  .nav-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}

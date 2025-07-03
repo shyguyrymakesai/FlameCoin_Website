@@ -1,0 +1,4 @@
+flamecoin-site/node_modules/
+flamecoin-site/dist/
+flamecoin-site/.astro/
+*.log

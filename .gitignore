@@ -1,4 +1,5 @@
-flamecoin-site/node_modules/
+# Ignore build outputs
 flamecoin-site/dist/
+flamecoin-site/node_modules/
 flamecoin-site/.astro/
 *.log

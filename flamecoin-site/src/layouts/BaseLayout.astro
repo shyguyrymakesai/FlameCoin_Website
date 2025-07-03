@@ -1,4 +1,5 @@
 ---
+import NavBar from '../components/NavBar.astro';
 const { title = 'FlameCoin', description } = Astro.props;
 ---
 
@@ -6,24 +7,15 @@ const { title = 'FlameCoin', description } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
-
-    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
   </head>
-
-  <body
-    style="font-family: var(--font-display); background: var(--ash); color: var(--charcoal);"
-  >
-    <header>
-      <h1>FlameCoin</h1>
-    </header>
-
+  <body style="font-family: var(--font-display); background: var(--ash); color: var(--charcoal);">
+    <NavBar />
     <main>
       <slot />
     </main>
-
-    <footer>© 2025 FlameCoin</footer>
+    <footer class="site-footer">© 2025 FlameCoin</footer>
   </body>
 </html>

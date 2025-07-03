@@ -1,28 +1,10 @@
 ---
-  codex/create-hero-section-with-cta
 import Hero from '../components/Hero.astro';
-layout: "../layouts/BaseLayout.astro"
-        main
+layout: '../layouts/BaseLayout.astro'
 ---
- codex/migrate-pages-to-layout
+
+<Hero />
 <h2>The future of decentralized fire.</h2>
+<div class="bg-flame-500 text-white p-4 mt-4">Powered by Tailwind</div>
 <a href="/story">Read the story</a>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>FlameCoin</title>
-    <link rel="stylesheet" href="/styles/global.css" />
-  </head>
-  <body style="font-family: var(--font-display); background: var(--ash); color: var(--charcoal);">
-    <header>
-      <h1>FlameCoin</h1>
-    </header>
-    <main>
-      <Hero />
-      <h2>The future of decentralized fire.</h2>
-      <div class="bg-flame-500 text-white p-4 mt-4">Powered by Tailwind</div>
-      <a href="/story">Read the story</a>
-    </main>
-  </body>
-</html>
- main
+

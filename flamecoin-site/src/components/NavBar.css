@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background: var(--ash);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+.hamburger span,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background: var(--charcoal);
+  margin: 4px 0;
+  transition: transform 0.3s;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--charcoal);
+  padding: 0.25rem 0;
+}
+
+.menu-toggle:checked ~ .menu {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0;
+  }
+}
